@@ -1,10 +1,12 @@
 {
   "name": "cc-md",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "description": "Markdown-formatted Creative Commons licenses",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/idleberg/Creative-Commons-Markdown.git"
+  "author": "idleberg",
+  "license": "Unlicense",
+  "scripts": {
+    "lint": "npm run test",
+    "test": "remark -u lint ./4.0/*.markdown ./legacy/**/*.markdown"
   },
   "keywords": [
     "markdown",
@@ -13,10 +15,16 @@
     "licenses",
     "cc"
   ],
-  "author": "idleberg",
-  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idleberg/Creative-Commons-Markdown.git"
+  },
   "bugs": {
     "url": "https://github.com/idleberg/Creative-Commons-Markdown/issues"
   },
-  "homepage": "https://github.com/idleberg/Creative-Commons-Markdown#readme"
+  "homepage": "https://github.com/idleberg/Creative-Commons-Markdown#readme",
+  "devDependencies": {
+    "remark-cli": "^8.0.1",
+    "remark-lint": "^7.0.1"
+  }
 }
